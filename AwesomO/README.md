@@ -23,8 +23,12 @@ The build scripts are located in ./build; debug.xml for debug builds and release
 
 These scripts require Apache Ant, which is also included in NetBeans out of the box.
 
+This means no commands are needed to build/test/deploy.
+
+<!---
 To specify:
 
 Any further instructions needed to configure a fresh install of the IDE such that it can compile/build/deploy/test/run your implementation.
 
 The actual compile/build/deploy/test commands to use.
+-->
