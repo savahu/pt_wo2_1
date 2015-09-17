@@ -4,6 +4,7 @@
 ###PT_WO2_1
 Members:
 - Dominique Stoverink
+- Laurens Jansen
 - Margie Liauw
 - Sander van Hulst
 
