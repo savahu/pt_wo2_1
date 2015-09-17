@@ -7,7 +7,7 @@ package core;
 
 /**
  *
- * @author sander
+ * @author sandervanhulst
  */
 public class AwesomO {
 
