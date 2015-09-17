@@ -7,11 +7,12 @@ IDE: NetBeans
 Build tool: Apache Ant
 
 To build the project, the following requirements are neccesary:
-JDK 1.8
-NetBeans 8.0.2
-JUnit 4.x (optional in the NetBeans installer)
+- JDK 1.8
+- NetBeans 8.0.2
+- JUnit 4.x (optional in the NetBeans installer)
 
 Source code is located in .\src
+
 Unit tests are located in .\tests and can be executed and edited from within NetBeans, using the JUnit framework.
 
 To specify:
