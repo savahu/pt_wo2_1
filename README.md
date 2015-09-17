@@ -17,7 +17,7 @@ Setup instructions:
 To build the project, the following requirements are neccesary:
 - JDK 1.8
 - NetBeans 8.0.2
-- JUnit (optional in the NetBeans installer)
+- JUnit 4.x (optional in the NetBeans installer)
 
 Any further instructions needed to configure a fresh install of the IDE such that it can compile/build/deploy/test/run your implementation.
 
