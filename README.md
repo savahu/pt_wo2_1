@@ -2,6 +2,12 @@
 ## Lab: Quality Care Robot
 
 ###PT_WO2_1
+Group members: 
+Dominique Stoverink
+Laurens Jansen
+Margie Liauw
+Sander van Hulst
+
 IDE: NetBeans
 
 Build tool: Apache Ant
