@@ -3,10 +3,10 @@
 
 ###PT_WO2_1
 Group members: 
-Dominique Stoverink
-Laurens Jansen
-Margie Liauw
-Sander van Hulst
+- Dominique Stoverink
+- Laurens Jansen
+- Margie Liauw
+- Sander van Hulst
 
 IDE: NetBeans
 
