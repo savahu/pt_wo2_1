@@ -11,9 +11,9 @@ To build the project, the following requirements are neccesary:
 - NetBeans 8.0.2
 - JUnit 4.x (optional in the NetBeans installer)
 
-Source code is located in .\src
+Source code is located in ./src
 
-Unit tests are located in .\tests and can be executed and edited from within NetBeans, using the JUnit framework.
+Unit tests are located in ./tests and can be executed and edited from within NetBeans, using the JUnit framework.
 
 To specify:
 
