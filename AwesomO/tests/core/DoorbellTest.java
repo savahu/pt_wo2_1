@@ -5,7 +5,6 @@ import core.Filter.BooleanSink;
 import core.Filter.DoorbellEnum;
 import core.Filter.Filter;
 import core.Filter.Pipe;
-import core.Filter.Sink;
 import junit.framework.Assert;
 import org.junit.After;
 import org.junit.AfterClass;
