@@ -1,8 +1,8 @@
 package core;
 
-import core.Filter.DoorbellFilter;
+import core.Filter.Doorbell.DoorbellFilter;
 import core.Filter.BooleanSink;
-import core.Filter.DoorbellEnum;
+import core.Filter.Doorbell.DoorbellEnum;
 import core.Filter.Filter;
 import core.Filter.Pipe;
 import junit.framework.Assert;
@@ -20,28 +20,11 @@ public class DoorbellTest {
     
     public DoorbellTest() {
     }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
     @Test
     public void TestDoorbellFilter() throws InterruptedException 
     {
-        Pipe<Enum> input = new Pipe<Enum>();
-        Pipe<Boolean> output = new Pipe<Boolean>();
+        Pipe<Enum> input = new Pipe<>();
+        Pipe<Boolean> output = new Pipe<>();
 
         input.put(DoorbellEnum.Opened);
         
