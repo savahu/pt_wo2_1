@@ -6,7 +6,7 @@ package core.Filter;
  */
  
     public enum DoorbellEnum {
-	Closed("C"), Opened("O"), Pending("P");
+	Closed("C"), Pending("P"), Opened("O");
 
 	private String doorbellCode;
 

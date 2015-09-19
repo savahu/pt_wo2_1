@@ -4,16 +4,16 @@ package core.Filter;
  *
  * @author sander
  */
-public class DoorbellFilter extends Filter<Integer, String> {
+public class DoorbellFilter extends Filter<Enum, Boolean> {
 
-    public DoorbellFilter(IPipe<Integer> input, IPipe<String> output) {
+    public DoorbellFilter(IPipe<Enum> input, IPipe<Boolean> output) {
         super(input, output);
     }
 
     @Override
-    protected String transformOne(Integer in) {
-        String out = Integer.toString(in);
-        System.out.println("filtered " + Integer.toString(in) + " to " + out);
+    protected Boolean transformOne(Enum in) {
+        Boolean out = in.equals(DoorbellEnum.Opened);
+        System.out.println("filtered " + in.toString() + " to " + out.toString());
         return out;
     }
 }
