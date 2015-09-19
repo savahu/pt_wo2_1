@@ -5,9 +5,9 @@
  */
 package core;
 
-import core.Filter.CoffeeFilter;
+import core.Filter.Coffee.CoffeeFilter;
 import core.Filter.BooleanSink;
-import core.Filter.CoffeeEnum;
+import core.Filter.Coffee.CoffeeEnum;
 import core.Filter.Filter;
 import core.Filter.Pipe;
 import junit.framework.Assert;
@@ -22,28 +22,12 @@ public class CoffeeTest {
     
     public CoffeeTest() {
     }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     @Test
     public void TestCoffeeFilter() throws InterruptedException 
     {
-        Pipe<Enum> input = new Pipe<Enum>();
-        Pipe<Boolean> output = new Pipe<Boolean>();
+        Pipe<Enum> input = new Pipe<>();
+        Pipe<Boolean> output = new Pipe<>();
 
         input.put(CoffeeEnum.Ready);
         
