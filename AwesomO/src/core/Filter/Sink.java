@@ -6,7 +6,7 @@ package core.Filter;
  */
 public abstract class Sink<T> extends ThreadedRunner {
     protected IPipe<T> input;
-
+    
     public Sink(IPipe<T> input) {
         this.input = input;
     }
