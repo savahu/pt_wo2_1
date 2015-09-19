@@ -21,7 +21,6 @@ public class BooleanSink extends Sink<Boolean> {
         try {
             Boolean in;
             while ((in = pipe.nextOrNullIfEmptied()) != null) {
-                System.out.println(in);
                 Output = in;
                 //delayForDebug(300);
             }
