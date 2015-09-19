@@ -13,7 +13,8 @@ public class DoorbellFilter extends Filter<Enum, Boolean> {
     @Override
     protected Boolean transformOne(Enum in) {
         Boolean out = in.equals(DoorbellEnum.Opened);
-        System.out.println("filtered " + in.toString() + " to " + out.toString());
+        System.out.println("The state of the door is "+ in.toString());
+         System.out.println("Filtered " + in.toString() + " to " + out.toString());
         return out;
     }
 }
