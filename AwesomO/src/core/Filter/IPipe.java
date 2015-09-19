@@ -1,8 +1,8 @@
 package core.Filter;
 
 /**
- *
- * @author sander
+ * Java generic pipe and filter classes
+ * @author roryokane
  */
 public interface IPipe<T> {
     public boolean put(T obj);

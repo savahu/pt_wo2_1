@@ -1,8 +1,8 @@
 package core.Filter;
 
 /**
- *
- * @author sander
+ * Java generic pipe and filter classes
+ * @author roryokane
  */
 public abstract class Sink<T> extends ThreadedRunner {
     protected IPipe<T> input;

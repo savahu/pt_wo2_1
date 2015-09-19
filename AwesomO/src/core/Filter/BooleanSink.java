@@ -22,11 +22,9 @@ public class BooleanSink extends Sink<Boolean> {
             Boolean in;
             while ((in = pipe.nextOrNullIfEmptied()) != null) {
                 Output = in;
-                //delayForDebug(300);
             }
-            System.out.println("sink finished");
         } catch (InterruptedException e) {
-            System.err.println("interrupted");
+            System.err.println("InterruptedException occurred: " + e.getStackTrace());
         } finally {
             System.out.close();
         }

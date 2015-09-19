@@ -6,11 +6,11 @@ import java.util.NoSuchElementException;
 import java.util.Queue;
 
 /**
- *
- * @author sander
+ * Java generic pipe and filter classes
+ * @author roryokane
  */
 public class Pipe<T> implements IPipe<T> {
-    private Queue<T> buffer = new LinkedList<T>();
+    private Queue<T> buffer = new LinkedList<>();
     private boolean isOpenForWriting = true;
     private boolean hasReadLastObject = false;
 
@@ -24,15 +24,10 @@ public class Pipe<T> implements IPipe<T> {
 
         boolean wasAdded = buffer.add(obj);
         notify();
-        //System.out.println("added to pipe: " + (obj==null?"<null>":obj.toString()));
         return wasAdded;
     }
 
     @Override
-    // not using next() and willHaveNext() because a currently-empty pipe might be
-    //  closed after the willHaveNext() check, causing next() to wait forever
-    // not using an exception because would require consumers to write unidiomatic `while(true)`
-    // not using an Option because there is no standard Option and reimplementing it is too annoying
     public synchronized T nextOrNullIfEmptied() throws InterruptedException {
         if (hasReadLastObject) {
             throw new NoSuchElementException("pipe is closed and empty; will never contain any further values");
