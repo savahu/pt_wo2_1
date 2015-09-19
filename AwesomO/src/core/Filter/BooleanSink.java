@@ -28,7 +28,6 @@ public class BooleanSink extends Sink<Boolean> {
             System.out.println("sink finished");
         } catch (InterruptedException e) {
             System.err.println("interrupted");
-            e.printStackTrace();
         } finally {
             System.out.close();
         }
