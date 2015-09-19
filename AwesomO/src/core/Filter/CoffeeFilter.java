@@ -18,7 +18,7 @@ public class CoffeeFilter extends Filter<Enum, Boolean> {
     @Override
     protected Boolean transformOne(Enum in) {
         Boolean out = in.equals(CoffeeEnum.Ready);
-        System.out.println("filtered " + in.toString() + "to " + out.toString());
+        System.out.println("The coffee is " + out.toString());
         return out;
     }
 }
