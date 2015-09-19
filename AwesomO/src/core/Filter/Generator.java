@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package core.Filter;
 
 /**
@@ -10,9 +5,9 @@ package core.Filter;
  * @author sander
  */
 public abstract class Generator<T> extends ThreadedRunner {
-    protected Pipe<T> output;
+    protected IPipe<T> output;
 
-    public Generator(Pipe<T> output) {
+    public Generator(IPipe<T> output) {
         this.output = output;
     }
 
@@ -21,5 +16,5 @@ public abstract class Generator<T> extends ThreadedRunner {
         generateInto(output);
     }
 
-    public abstract void generateInto(Pipe<T> pipe);
+    public abstract void generateInto(IPipe<T> pipe);
 }

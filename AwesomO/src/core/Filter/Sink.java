@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package core.Filter;
 
 /**
@@ -10,9 +5,9 @@ package core.Filter;
  * @author sander
  */
 public abstract class Sink<T> extends ThreadedRunner {
-    protected Pipe<T> input;
+    protected IPipe<T> input;
 
-    public Sink(Pipe<T> input) {
+    public Sink(IPipe<T> input) {
         this.input = input;
     }
 
@@ -21,7 +16,7 @@ public abstract class Sink<T> extends ThreadedRunner {
         takeFrom(input);
     }
     
-     public void takeFrom(Pipe<T> pipe) {
+     public void takeFrom(IPipe<T> pipe) {
         try {
             T in;
             while ((in = pipe.nextOrNullIfEmptied()) != null) {

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package core.Filter;
 
 /**
@@ -11,7 +6,7 @@ package core.Filter;
  */
 public class DoorbellFilter extends Filter<Integer, String> {
 
-    public DoorbellFilter(Pipe<Integer> input, Pipe<String> output) {
+    public DoorbellFilter(IPipe<Integer> input, IPipe<String> output) {
         super(input, output);
     }
 
