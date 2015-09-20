@@ -25,6 +25,8 @@ These scripts require Apache Ant, which is also included in NetBeans out of the 
 
 This means no commands are needed to build/test/deploy.
 
+In order to test our implementation, run the 'CoffeeTest.java' or the 'DoorbellTest.java' in netbeans located in tests --> core 
+
 <!---
 To specify:
 
